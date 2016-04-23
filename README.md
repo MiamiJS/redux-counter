@@ -15,7 +15,7 @@
   ### Angular Clients (Peter)
     - loren ipsum
 
-  ## React Clients (Joe)
+  ### React Clients (Joe)
 
   #### Web
     - Hello World
