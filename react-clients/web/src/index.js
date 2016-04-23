@@ -1,12 +1,13 @@
 import React from 'react'
 import {render} from 'react-dom'
 import { Provider } from 'react-redux'
+import AppContainer from './views/AppContainer'
 import io from 'socket.io-client'
 import {applyMiddleware, createStore} from 'redux'
-import AppContainer from './views/AppContainer'
 import serverMiddleware from './middleware'
 import rootReducer from './reducers'
 import {mergeState} from './actions/counterActions'
+
 
 const socket = io(`${location.protocol}//${location.hostname}:8090`)
 socket.on('state', serverState =>
