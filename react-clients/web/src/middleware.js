@@ -1,6 +1,8 @@
 //currying
-export default store => next => action => {
-  console.log('in middleware', action)
+export default socket => store => next => action => {
+  if (!action.local) {   //emits action to server
+    socket.emit('action', action)
+  }
   return next(action)
 }
 

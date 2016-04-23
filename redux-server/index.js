@@ -14,4 +14,4 @@ const firebaseRef = new Firebase('https://miamijsredux.firebaseio.com/')
 firebaseRef.set(INITIAL_STATE.toJS())
 
 
-//TODO: update firbase on dispatch
+//TODO: update firebase on dispatch
