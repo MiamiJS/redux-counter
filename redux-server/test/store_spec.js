@@ -8,8 +8,8 @@ describe('Store', () => {
   let store
   beforeEach(() => {store = makeStore()})
 
-  it('Confirm store functions', ()=>{
-    expect(store.getState()).to.equal(Map({}))
+  it('Confirm Store Intitial State', ()=>{
+    expect(store.getState()).to.equal(Map({value:0}))
   })
 
   it('Dispatch Action to Store', ()=>{
