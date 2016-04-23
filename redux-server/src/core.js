@@ -1,5 +1,5 @@
 import {Map} from 'immutable'
-export const INITIAL_STATE = Map({})
+export const INITIAL_STATE = Map({value:0})
 
 export function setState(state, value) {
   return state.set('value', value)
