@@ -1,17 +1,11 @@
-export function setState(state, value) {
-  return state.set('value', value)
+export function setState(state, currentNumber) {
+  return state.set('currentNumber', currentNumber)
 }
 
 export function increment(state) {
-  const newState = state.updateIn(['value'], value=>value+1)
-  console.log('\n\t Incrementing: ' +  newState + '\n')
-  return newState
+  return state.updateIn(['currentNumber'], currentNumber=>currentNumber+1)
 }
 
 export function decrement(state) {
-
-  const newState = state.updateIn(['value'], value=>value-1)
-  console.log('\n\t Decrementing: ' +  newState + '\n')
-  return newState
-
+  return state.updateIn(['currentNumber'], currentNumber=>currentNumber-1)
 }

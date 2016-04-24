@@ -8,11 +8,11 @@ import * as actions from '../actions/counterActions'
 const App = React.createClass({
   mixins: [PureRenderMixin],
   render (){
-    const {onIncrement, onDecrement, value } =this.props
+    const {onIncrement, onDecrement, currentNumber } =this.props
     return(
       <div className='is-flex' style={styles.container}>
 
-        <p style={styles.text}>{value}</p>
+        <p style={styles.text}>{currentNumber}</p>
 
         <p>
           <button className="button is-large is-success" onClick={onIncrement}>+</button> &nbsp;
@@ -36,5 +36,5 @@ const styles = {
 
 }
 
-const mapStateToProps = (state) => ({value: state.counter.get('value')})
+const mapStateToProps = (state) => ({currentNumber: state.counter.get('currentNumber')})
 export default connect(mapStateToProps, actions)(App)
