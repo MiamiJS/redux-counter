@@ -1,7 +1,6 @@
 import makeStore from './src/store'
 import startServer from './src/server'
 import Firebase from 'firebase'
-import {INITIAL_STATE} from './src/core'
 
 export const store = makeStore()
 startServer(store)
@@ -10,8 +9,16 @@ startServer(store)
 
 const firebaseRef = new Firebase('https://miamijsredux.firebaseio.com/')
 
-//set initial state in firebase. runs once at server start
-firebaseRef.set(INITIAL_STATE.toJS())
+
+firebaseRef.child('value').on("value", function(snapshot) {
+  const currentNumber = snapshot.val()
+  getsFromFB(currentNumber)
+})
 
 
-//TODO: update firebase on dispatch
+
+function getsFromFB(currentNumber){
+  const action = {type: 'SET_STATE', value: currentNumber}
+  store.dispatch(action)
+  console.log(store.getState().toJS())
+}

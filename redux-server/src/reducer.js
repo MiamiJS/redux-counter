@@ -1,6 +1,7 @@
-import {setState, increment, decrement, INITIAL_STATE} from './core'
+import {Map} from 'immutable'
+import {setState, increment, decrement, fetchState} from './core'
 
-export default function reducer(state=INITIAL_STATE, action) {
+export default function reducer(state=Map(), action) {
   switch (action.type) {
   case 'SET_STATE':
     return setState(state, action.value)
