@@ -7,17 +7,9 @@ export const store = makeStore()
 startServer(store)
 
 
-const firebaseRef = new Firebase('https://miamijsredux.firebaseio.com/')
+export const firebaseRef = new Firebase('https://miamijsredux.firebaseio.com/')
 
-
+//set inital state 
 firebaseRef.child('currentNumber').on("value", function(snapshot) {
-  const currentNumber = snapshot.val()
-  getsFromFB(currentNumber)
+  store.dispatch({type: 'SET_STATE', currentNumber: snapshot.val()})
 })
-
-
-
-function getsFromFB(currentNumber){
-  const action = {type: 'SET_STATE', currentNumber: currentNumber}
-  store.dispatch(action)
-}
