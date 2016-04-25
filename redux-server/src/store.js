@@ -15,7 +15,9 @@ const fbMiddleware = store => next => action => {
 }
 
 
-const makeStore = () => createStore(reducer, applyMiddleware(thunk, fbMiddleware))
 
+const storeWithMiddleware = applyMiddleware(thunk, fbMiddleware)(createStore)
 
-export default makeStore
+const store = storeWithMiddleware(reducer)
+
+export default store

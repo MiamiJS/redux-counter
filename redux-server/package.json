@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "nodemon": "nodemon index.js --exec babel-node",
     "start": "babel-node index.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js  --recursive",
-    "watch": "npm run test -- --watch"
+    "watch": "npm run test -- --watch",
+    "nodemon": "nodemon index.js --exec babel-node"
   },
   "keywords": [],
   "author": "",
