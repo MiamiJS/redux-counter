@@ -23,7 +23,6 @@
     - Syncing the Server
     - Connecting Components
     - Dumb Components
-    - Pure Rendering
     - Flexbox and Bulma
 
   #### Mobile

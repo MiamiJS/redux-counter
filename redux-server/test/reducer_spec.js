@@ -34,9 +34,9 @@ describe('Reducer', () => {
   it('go forward and backward', ()=>{
     const actions = [
       {type: 'SET_STATE', currentNumber:5},
-      {type: 'INCREMENT'},
-      {type: 'INCREMENT'},
-      {type: 'DECREMENT'},
+      {type: 'INCREMENT'},  //+1
+      {type: 'INCREMENT'},  //+1
+      {type: 'DECREMENT'},  //-1
     ]
     const finalState = actions.reduce(reducer, Map({}))
     expect(finalState).to.equal(fromJS({currentNumber:6}))

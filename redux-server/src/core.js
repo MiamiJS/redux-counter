@@ -3,9 +3,8 @@ export function setState(state, currentNumber) {
 }
 
 export function increment(state) {
-  return state.updateIn(['currentNumber'], currentNumber=>currentNumber+1)
+  return state.update('currentNumber', currentNumber => currentNumber + 1)
 }
-
 export function decrement(state) {
-  return state.updateIn(['currentNumber'], currentNumber=>currentNumber-1)
+  return state.update('currentNumber', currentNumber => currentNumber - 1)
 }
