@@ -14,7 +14,9 @@
     - Configuring Firebase
 
   ### Angular Clients (Peter)
-    - loren ipsum
+    - Installing angular cli
+    - Installing ionic cli
+    - Adding ngrx/store to both projects
 
   ### React Clients (Joe)
 
