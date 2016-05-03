@@ -1,6 +1,7 @@
 # Miami JS Redux Workshop
 
 ## Intro (Joe and Peter)
+- Audience Poll of familiarity with Angular, React, Redux, etc.
 - Demo: Vote for Next Meetup
 - Sidenote: About being a 'expert'
 - General Redux Architecture
