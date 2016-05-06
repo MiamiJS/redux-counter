@@ -1,5 +1,7 @@
 # Miami JS Redux Workshop
+
 ## Intro (Joe and Peter)
+- Audience Poll of familiarity with Angular, React, Redux, etc.
 - Demo: Vote for Next Meetup
 - Sidenote: About being a 'expert'
 - General Redux Architecture
@@ -13,7 +15,9 @@
     - Configuring Firebase
 
   ### Angular Clients (Peter)
-    - loren ipsum
+    - Installing angular cli
+    - Installing ionic cli
+    - Adding ngrx/store to both projects
 
   ### React Clients (Joe)
 
@@ -32,6 +36,16 @@
   - Flexbox for Native
   - Syncing the Server
 
+## Resources
+
+#### Redux
+  - [ReduxJS](http://redux.js.org/)
+
+#### Redux with Angular 2 via ngrx
+  - [Build a Better Angular 2 Application with Redux and ngrx](http://onehungrymind.com/build-better-angular-2-application-redux-ngrx/)
+  - [Comprehensive Introduction to @ngrx/store](https://gist.github.com/btroncone/a6e4347326749f938510)
+
+#### Redux with React
 
 ## Todo:
 - [ ] make skelelton
