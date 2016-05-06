@@ -20,21 +20,9 @@
     - Adding ngrx/store to both projects
 
   ### React Clients (Joe)
-
-  #### Web
-    - Hello World
-    - Client Store
-    - Syncing the Server
-    - Connecting Components
-    - Dumb Components
-    - Flexbox and Bulma
-
-  #### Mobile
-  - Appetize.io and react-native cli
-  - Hello World
-  - Native UI Components
-  - Flexbox for Native
-  - Syncing the Server
+    - React Hello World
+    - Adding the client store
+    - Resuing web code-base for react-native
 
 ## Resources
 
